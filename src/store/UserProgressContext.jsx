@@ -5,7 +5,7 @@ const UserProgressContext = createContext({
 
   showCart: () => {},
   hideCart: () => {},
-  showCeckout: () => {},
+  showCheckout: () => {},
   hideCheckout: () => {},
 });
 
