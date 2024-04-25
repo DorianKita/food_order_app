@@ -12,17 +12,21 @@ export default function Meals() {
   } = useHttp("http://localhost:3000/meals", requestConfig, []);
 
   if (isLoading) {
-    return <p className="center">Fetching meals data</p>;
+    return <p className="center">Fetching meals...</p>;
   }
 
   if (error) {
     return <Error title="Failed to fetch meals" message={error} />;
   }
 
+  // if (!data) {
+  //   return <p>No meals found.</p>
+  // }
+
   return (
     <ul id="meals">
       {loadedMeals.map((meal) => (
-        <MealItem meal={meal} key={meal.id} />
+        <MealItem key={meal.id} meal={meal} />
       ))}
     </ul>
   );
