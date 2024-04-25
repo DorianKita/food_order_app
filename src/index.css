@@ -249,6 +249,16 @@ h1 {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
+.error {
+  background-color: rgb(186, 101, 186);
+  text-align: center;
+  width: 30vw;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+}
+
 @keyframes fade-slide-up {
   from {
     opacity: 0;
