@@ -1,5 +1,4 @@
 import { currencyFormatter } from "../util/firmatting.js";
-import CartContext from "../store/CartContext.jsx";
 
 export default function CartItem({
   name,
